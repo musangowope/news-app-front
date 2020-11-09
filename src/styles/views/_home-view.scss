@@ -1,0 +1,32 @@
+.home-view {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.home-view__title {
+  color: $primary-color;
+  font-size: $primary-heading-size;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-view__description {
+  margin-bottom: 20px;
+}
+
+.home-view__search-wrapper {
+  margin-bottom: 40px;
+}
+
+.home-view__results-header {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+.home-view__results-header__title {
+  font-size: $secondary-heading-size;
+  font-weight: bold;
+}
