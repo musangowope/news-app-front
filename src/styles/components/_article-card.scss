@@ -1,0 +1,74 @@
+.article-card {
+  display: block;
+  text-decoration: none;
+  animation: fadeIn forwards 200ms;
+
+  .article-card__title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 300ms ease-in-out;
+  }
+
+  .article-card__author-date-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .article-card__author-date-wrapper__date {
+    color: lighten($base-color, 20%);
+  }
+
+  .article-card__author-date-wrapper__author {
+    color: lighten($base-color, 20%);
+  }
+
+  .article-card__header {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+
+    .article-card__header__source-name {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: transparentize($base-color, 0.5);
+      padding: 10px;
+      color: white;
+      z-index: 9;
+      border-radius: 15px;
+    }
+
+    .article-card__header__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 300ms ease-in-out;
+    }
+  }
+
+  &:hover {
+    .article-card__title {
+      color: $primary-color;
+    }
+    .article-card__header {
+      & > img {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
