@@ -1,0 +1,49 @@
+.sources-filter-loader {
+  height: 50px;
+
+  .block-loader {
+    border-radius: 15px;
+  }
+}
+
+.sources-filter {
+  height: 50px;
+}
+
+.sources-filter__placeholder {
+  color: transparentize($base-color, 0.5) !important;
+}
+
+.sources-filter__control {
+  border-radius: 15px !important;
+  background-color: white !important;
+  border: 2px solid $base-color !important;
+  height: 100%;
+}
+
+.sources-filter__control--is-focused {
+  outline: none;
+}
+
+.sources-filter__multi-value {
+  background-color: $primary-color !important;
+  color: white !important;
+  padding: 2px;
+  border-radius: 5px !important;
+}
+
+.sources-filter__multi-value__label {
+  color: white !important;
+}
+
+.sources-filter__multi-value__remove {
+  &:hover {
+    background-color: transparent !important;
+  }
+
+  svg {
+    path {
+      fill: white;
+    }
+  }
+}
