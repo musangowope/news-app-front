@@ -1,0 +1,22 @@
+.article-card-loader {
+}
+
+.article-card-loader__header {
+  .block-loader {
+    height: 250px;
+    border-radius: 15px;
+  }
+  margin-bottom: 15px;
+}
+
+.article-card-loader__row {
+  .block-loader {
+    height: 21px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
