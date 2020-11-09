@@ -1,0 +1,76 @@
+/*Override styling for date range component*/
+
+.date-range-picker {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 50px;
+
+  .DateRangePicker {
+    width: 100%;
+    border: 2px solid $base-color;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    .DateRangePicker_picker {
+      z-index: 99;
+    }
+
+    .DateRangePickerInput {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border: none;
+      background: transparent;
+
+      .DateRangePickerInput_calendarIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 20px;
+          height: auto;
+        }
+      }
+
+      .DateRangePickerInput_arrow {
+        display: none;
+      }
+
+      .DateInput {
+        flex: 1;
+        background: transparent;
+
+        .DateInput_input {
+          background-color: transparent;
+          font-size: $base-font-size;
+          &::placeholder {
+            color: transparentize($base-color, 0.5);
+          }
+        }
+      }
+
+      .DateInput_input__focused {
+        border-color: transparent;
+      }
+    }
+  }
+
+  .CalendarDay {
+    text-align: center;
+  }
+}
+
+.date-range-picker__clear-button {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: $base-color;
+  border: none;
+  color: white;
+  width: 150px;
+  display: block;
+  transition: opacity 200ms ease-in-out;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
