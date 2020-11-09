@@ -1,0 +1,36 @@
+.search-box {
+  position: relative;
+  height: 50px;
+}
+
+.search-box__field {
+  height: 100%;
+  width: 100%;
+  padding-left: 50px;
+  border-radius: 15px;
+  border: 2px solid $base-color;
+  box-shadow: none;
+  outline: none;
+
+  &::placeholder {
+    color: transparentize($base-color, 0.5);
+  }
+
+  &:focus,
+  &:hover {
+    border-color: $base-color;
+    outline: none;
+  }
+}
+
+.search-box__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 25px;
+  height: auto;
+}
+
