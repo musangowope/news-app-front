@@ -4,7 +4,7 @@ React app that fetches articles from http://newsapi.org/ and displays it '
 on the front end
 
 ## Getting started
-Straight forward: `yarn install`
+Straight forward: `yarn install` then `yarn start`
 
 ## NB: Newsapi
 as of June 2020, newspaper api reqires you yo have an upgraded plan when using the 
